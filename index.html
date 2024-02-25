@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>cruds</title>
+</head>
+<body>
+    <img src="moon-removebg-preview.png" alt="" id="moon">
+    <div class="cruds">
+        <h2>cruds</h2>
+        <p>PRODUCT MANAGEMENT SYSTEM</p>
+        <div class="feld">
+            <input type="text" placeholder="title" id="title">
+            <input  onkeyup="gettotal()"  type="number" placeholder="price" id="price">
+            <input onkeyup="gettotal()" type="number" placeholder="taxes" id="taxes">
+            <input onkeyup="gettotal()" type="number" placeholder="ads" id="ads">
+            <input onkeyup="gettotal()" type="number" placeholder="discount" id="discount">
+            <small id="total"></small>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="create">create</button>
+
+
+
+
+            <input type="text" placeholder="search" id="search" onkeyup="getvalue(this.value)">
+            <div class="search">
+                 <button id="bytitle" onclick="getmode(this.id)">search by title</button>
+            <button id="bycate" onclick="getmode(this.id)">search by category</button>
+            </div>
+        </div>
+        <div id="deleteall">
+            
+        </div>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>ads</th>
+            <th>taxes</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>count</th>
+            <th>catagory</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+            <tbody id="tb">
+
+            </tbody>
+        
+    </table>
+    
+    </div>
+    <img src="house.png" alt="" id="home">
+    <script src="main2.js"></script>
+</body>
+</html>
